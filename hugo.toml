@@ -1,0 +1,37 @@
+baseURL = 'https://help.mainlinedyno.com.au/'
+languageCode = 'en-us'
+title = 'Mainline Dyno Help'
+theme = 'hugo-theme-relearn'
+
+[params]
+  menu_style = "slide-menu"
+  disableRootBreadcrumb = true
+  disableInlineCopyToClipBoard = true
+
+[caches]
+[caches.images]
+  dir = ':cacheDir/images'
+
+[[params.themeVariant]]
+  identifier = 'blue'
+
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+
+[[module.mounts]]
+  source = 'img'
+  target = 'static/img'
+
+[outputs]
+  home = [
+    'html',
+  ]
+  page = [
+    'html',
+    'rss',
+    'print',
+  ]
+  section = [
+    'html',
+  ]
