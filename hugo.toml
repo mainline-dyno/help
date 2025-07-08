@@ -1,4 +1,5 @@
-baseURL = 'https://help.mainlinedyno.com.au/'
+baseURL = 'https://mainline-dyno.github.io/help/'
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'Mainline Dyno Help'
 theme = 'hugo-theme-relearn'
@@ -7,10 +8,6 @@ theme = 'hugo-theme-relearn'
   menu_style = "slide-menu"
   disableRootBreadcrumb = true
   disableInlineCopyToClipBoard = true
-
-[caches]
-[caches.images]
-  dir = ':cacheDir/images'
 
 [[params.themeVariant]]
   identifier = 'blue'
