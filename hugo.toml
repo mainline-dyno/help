@@ -1,4 +1,4 @@
-baseURL = 'https://mainline-dyno.github.io/help/'
+baseURL = 'https://help.mainlinedyno.com.au/'
 canonifyURLs = true
 languageCode = 'en-us'
 title = 'Mainline Dyno Help'
