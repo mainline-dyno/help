@@ -43,7 +43,7 @@ Only one of each type of filter function can be used per expession.
 * `filter.Median(input, n)` Returns the median of the last n samples. The value of n must be constant and should be an odd number.
 * `filter2.MovingAverage(input, n)` Same as filter.MovingAverage.
 * `filter2.Exponential(input, smoothing)` Same as filter.Exponential.
-* `filter3....` Same as filter...
+* `filter3....` Same as filter..
 
 ## Calculus Utilities:
 * `calc.Integrate(input, deltaTime, initial, enable)` Returns the integral of the input. The initial value is the starting value of the integral. If the enable flag is false, the integral is reset to the initial value..
