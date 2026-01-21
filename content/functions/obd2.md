@@ -7,7 +7,7 @@ description: "How to configure OBD2 system"
 This document outlines the setup procedure for the OBD2 function in the Mainline CCS
 Software.
 
-A generic **“OBD2”** Can cable is supplied with your dyno, this cable is a “straight thru”
+A generic **“OBD2”** Can cable is supplied with your dyno. This cable is a “straight thru”
 non electronic cable, meaning it is just a direct connection to the Vehicle CAN Bus via
 the OBD2 socket, there is no “electronics” inside the cable such as what there would be
 on an “Elm327” style of cable that would plug into a USB port or use Bluetooth. ONLY a
