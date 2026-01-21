@@ -3,7 +3,6 @@ title: "OBD2 Setup"
 description: "How to configure OBD2 system"
 ---
 
-
 This document outlines the setup procedure for the OBD2 function in the Mainline CCS
 Software.
 
