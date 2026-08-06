@@ -10,17 +10,17 @@ The Drive Test is a "Ramp Test" style test, but instead of a pre-defined Test Ti
 
 To access it, click the **Drive Test** tab at the top of any screen in the software:
 
-![Drive Test tab](drive-test-tab.png)
+![Drive Test tab](../../img/drivetest/drive-test-tab.png)
 
 A blank Drive Test screen looks like this:
 
-![Blank Drive Test screen](blank-drive-screen.png)
+![Blank Drive Test screen](../../img/drivetest/blank-drive-screen.png)
 
 ## Screen Controls
 
 The bottom right of the Drive Test screen has the following controls:
 
-![Right panel controls](right-panel-controls.png)
+![Right panel controls](../../img/drivetest/right-panel-controls.png)
 
 | Control | Description |
 |---|---|
@@ -35,7 +35,7 @@ Normal practice is to set the X-axis Start/End RPM about 500 rpm outside the Dri
 
 ## Configure Drive Test
 
-![Configure Drive Test window](configure-drive-test-window.png)
+![Configure Drive Test window](../../img/drivetest/configure-drive-test-window.png)
 
 Four basic settings need to be set: **Start Speed (RPM)**, **End Speed (RPM)**, **Start Torque (Nm)**, and **Start Time Delay (s)**.
 
