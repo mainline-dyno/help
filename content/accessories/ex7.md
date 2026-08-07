@@ -12,7 +12,7 @@ inputs could be used for Fuel Flow meters etc. To use a Digital Input on a typic
 Fuel Sensor that requires 12v DC supply, the user would have to make a revision to the
 harness to use the 12v Expander Supply for the Flex Fuel Supply.
 
-The pinouts for all 7 connectors are the same, Pin 1 is Ground, Pin 2 is the “Signal Input”
+The pinouts for all 7 connectors are the same, Pin 1 is Ground, Pin 2 is the "Signal Input"
 and Pin 3 is the 5v DC supply.
 
 ![alt text](../../img/ex7/image.png)
@@ -20,12 +20,12 @@ and Pin 3 is the 5v DC supply.
 A generic CAN dataset for the EX7 will either already be supplied within the CCS
 software, or can be supplied by Mainline, or can be downloaded from our Software
 Download Server (available after February 2026). The generic data set will provide the
-user with 3 “AN Volt” inputs, 4 x “Duty Cycle” Inputs and 4 x “Frequency” Inputs.
+user with 3 "AN Volt" inputs, 4 x "Duty Cycle" Inputs and 4 x "Frequency" Inputs.
 
 Users can then either make their own Maths Expressions to do what they choose with
-these inputs, or additionally generate “Tables” to convert the Analog Inputs into specific
+these inputs, or additionally generate "Tables" to convert the Analog Inputs into specific
 Pressure Channels. The CCS software does have some generic sensor tables under the
-Functions – Tables tab for reference.
+Functions - Tables tab for reference.
 
 The supplied 4 pin DTM connector is to be plugged into CAN sockets 3A, 3B or 3C on the
 CAN hub in the dyno Cabinet and then mounted in the cabinet in a similar fashion to the
@@ -37,3 +37,17 @@ module
 ![alt text](../../img/ex7/image-1.png)
 
 ![alt text](../../img/ex7/image-2.png)
+
+## CAN Structure and Virtual Inputs
+
+The following is a screenshot showing the CAN structure of an EX7 when interfaced with
+the Dyno using the supplied CAN Dataset file, which should be listed under the
+Accessory CAN0 tab under Communications.
+
+![EX7 CAN structure under Communications and Accessory CAN0](../../img/ex7/can-structure.png)
+
+Below is an example of how to set up a Virtual Input from AN Volt 1 [Expander] to a
+Manifold Pressure [Expander] channel. Users can create and save their own
+calibrations.
+
+![Virtual Input example: AN Volt 1 to Manifold Pressure](../../img/ex7/virtual-input-example.png)
