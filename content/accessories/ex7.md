@@ -15,7 +15,7 @@ harness to use the 12v Expander Supply for the Flex Fuel Supply.
 The pinouts for all 7 connectors are the same, Pin 1 is Ground, Pin 2 is the "Signal Input"
 and Pin 3 is the 5v DC supply.
 
-![alt text](../../img/ex7/image.png)
+![Front view: Pin 3, Pin 1](../../img/ex7/pinout-front-view.jpg)
 
 A generic CAN dataset for the EX7 will either already be supplied within the CCS
 software, or can be supplied by Mainline, or can be downloaded from our Software
