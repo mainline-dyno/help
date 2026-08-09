@@ -3,7 +3,7 @@ title: "Portable Prohub CCS Cabinet Connections"
 description: "How to connect the CCS Cabinet to the ProHub Dynamometer"
 ---
 
-The Cabinet is packed with many internal connections already in place. The boom arm, monitor bracket and
+The Cabinet is packed with many internal connections already in place. The boom arm, boom arm DAQ module, monitor bracket and
 monitors need to be fitted during assembly of the dynamometer.
 
 ## CCS Dynamometer Modules to Cabinet Connections
@@ -49,7 +49,7 @@ through the aperture at the bottom of the cabinet before fitting the purple CAN 
 ## CAN Harness Connections (Purple Cables)
 
 The purple CAN cables from bottom of the cabinet and connected to the CAN hub mounted on the inside
-shelf of the cabinet – Marked 1 & 2
+shelf of the cabinet - Marked 1 & 2
 
 Ensure you push the connections in and **rotate the outer locking rings** clockwise to fully pull in
 and make a complete connection.
@@ -66,39 +66,48 @@ and make a complete connection.
 The additional (3 & 4) are for future use when
 upgrade to an AWD model.
 
-## Boom Arm Connections
+## Boom Arm DAQ Module Connections
 
-After the boom arm is fitted, there are the following connections that need to be made inside the cabinet
-that are all coming out of the boom arm. All connections will be marked / matched with mating connectors.
+(2026 Models Onwards)
 
-1. Weather Station
-2. MAP 1
-3. MAP 2
-4. Secondary Ignition (RPM – Tacho)
-5. Primary Ignition (RPM – Tacho)
-6. USB (To PC USB port)
+After the boom arm is fitted to the cabinet, the boom arm DAQ module needs to be fitted with the supplied
+screws.
 
-![](</img/css-cabinet-connections/image13.jpg>)
+![Boom arm DAQ module mounted](../../img/css-cabinet-connections/boom-arm-daq-module.jpg)
 
-![](</img/css-cabinet-connections/image14.jpg>)
+Make the following connections to the boom arm DAQ module:
 
-![](</img/css-cabinet-connections/image15.jpg>)
+**SEC** Secondary Ignition RPM / Tacho (inductive clamp).
+**PRI** Primary Ignition RPM / Tacho (voltage spike probe).
+**IDC** Injector Duty Cycle / Analog Voltage Input Cable (voltage spike probe).
+**CAN 3-B** CAN cable connection. This CAN cable will be inside the boom arm when packed.
+**MAP 1** Connect 5 metre Vacuum / Pressure Hose.
+**MAP 2** Connect 5 metre Vacuum / Pressure Hose.
+**FP** Fuel Pressure. User can connect their own pressure hose for fuel pressure measurements.
 
-![](</img/css-cabinet-connections/image16.jpg>)
+The Weather Station is located internally in the boom arm DAQ module.
 
-![](</img/css-cabinet-connections/image17.jpg>)
+![Boom arm DAQ module port row: FP, MAP1, MAP2, SEC, PRI, IDC, CAN 3-B, CAN 3-EXT](../../img/css-cabinet-connections/boom-arm-daq-ports.jpg)
 
+**IDC/Voltage toggle switch** toggles the input from the IDC lead between IDC function and 0-30V DC function.
 
-The Secondary and Primary connections are plugged in to the top of the Tachometer Module that is mounted
-on the left inside of the cabinet. RPM Out will already be connected.
+![IDC/Voltage toggle switch](../../img/css-cabinet-connections/idc-voltage-toggle-switch.jpg)
 
-## US Models Only – 110V Power Plug
+The CAN cable fitted to **CAN 3-B** on the boom arm DAQ module is connected through the boom arm to the
+CAN hub inside the cabinet at position **CAN 3-B**, as shown below.
+
+![CAN hub connections: CAN 3-B, CAN 3-C, CAN 4-A, CAN 4-B](../../img/css-cabinet-connections/can-hub-can3b-connection.jpg)
+
+**CAUTION:** Do not fit the OBD2 cable into the **CAN3-EXT** port on the DAQ box - OBD2 runs at 500 kb
+bus speed and will crash the 1 Mb bus the Data Acquisition box communicates at.
+
+## US Models Only - 110V Power Plug
 
 ![](</img/css-cabinet-connections/image18.jpg>)
 
 This 110V power plug is to be plugged in to a general power outlet.
 
-## AFR Meter – Mainline LC-2
+## AFR Meter - Mainline LC-2
 
 The Twin Channel AFR meter is mounted on the inside right had side of the cabinet. It will already be connected,
 apart from the 1 or 2 AFR Sensor harnesses. These harnesses are connected to the AFR meter DTM connectors
@@ -110,20 +119,24 @@ and passed out through the aperture at the bottom of the cabinet and connected t
 
 ![](</img/css-cabinet-connections/image21.jpg>)
 
-**NOTE:** The ‘Analog Out” harness coming from the AFR meter is not used for CCS models.
+**NOTE:** The 'Analog Out" harness coming from the AFR meter is not used for CCS models.
 
 ## Optional Vehicle Fan Power Outlet
 
 The vehicle fan power outlet is on the upper left or the upper right-hand side of the cabinet, depending on if the
-dynamometer is for Left- or Right-hand drive vehicles.
+dynamometer is for Left- or Right-hand drive vehicles. The outlet is wired for the specified mains power, for
+example 380V - 415V 3PH (Australia - Europe), 208V 3PH (Japan - USA), or 220V 1PH (Japan - USA).
+
+Fan switching can be controlled manually ON or OFF via the CCS software, either by clicking the **FAN** icon
+on screen or by pressing the **V** key on the keyboard.
 
 ![](</img/css-cabinet-connections/image22.jpg>)
 
 ## Optional Thermocouple Module
 
-The optional 8 Channel Thermocouple module is mounted on the boom arm and has a CAN harness through the
-boom arm an into the cabinet. It is connected to the CAN hub inside the cabinet at CAN 3 – A (Next to the
-LAMBDA CAN connector.
+The optional 8 Channel Thermocouple module CAN-EGT8 is mounted on the boom arm with the supplied
+adapter bracket and has a CAN harness marked `MLCCS-EGTBOXCBL` that plugs into the DTM4 socket
+marked **CAN 3-EXT** on the Data Acquisition box.
 
 ![](</img/css-cabinet-connections/image24.jpg>)
 
